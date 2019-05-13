@@ -36,9 +36,6 @@
 		4D189770223F3D470089A8F4 = {
 			isa = PBXGroup;
 			children = (
-				4D189786223F3DBD0089A8F4 /* Stack.swift */,
-				4D189787223F3DBD0089A8F4 /* Model.swift */,
-				4D189785223F3DBD0089A8F4 /* Store.swift */,
 				4D18977C223F3D470089A8F4 /* Bamal */,
 				4D18977B223F3D470089A8F4 /* Products */,
 			);
@@ -55,6 +52,9 @@
 		4D18977C223F3D470089A8F4 /* Bamal */ = {
 			isa = PBXGroup;
 			children = (
+				4D189786223F3DBD0089A8F4 /* Stack.swift */,
+				4D189787223F3DBD0089A8F4 /* Model.swift */,
+				4D189785223F3DBD0089A8F4 /* Store.swift */,
 				4D18977D223F3D470089A8F4 /* Bamal.h */,
 				4D18977E223F3D470089A8F4 /* Info.plist */,
 			);
@@ -104,7 +104,7 @@
 				TargetAttributes = {
 					4D189779223F3D470089A8F4 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -114,6 +114,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4D189770223F3D470089A8F4;
 			productRefGroup = 4D18977B223F3D470089A8F4 /* Products */;
@@ -293,7 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -319,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nyasa.Bamal;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
