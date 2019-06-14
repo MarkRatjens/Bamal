@@ -1,6 +1,6 @@
 import CoreData
 
-open class Model: NSManagedObject {
+open class LocalState: NSManagedObject {
 	open var asDictionary: [String: Any] {
 		return entity.attributesByName.keys.reduce([String: Any]()) { (r, k) in
 			var r = r
@@ -18,9 +18,9 @@ open class Model: NSManagedObject {
 	
 	public var entityName: String { return store.entityName }
 
-	public var store: Store<Model> { return type(of: self).store }
+	public var store: LocalStore<LocalState> { return type(of: self).store }
 	public static var entityName: String { return store.entityName }
-	static var store = Store<Model>()
+	static var store = LocalStore<LocalState>()
 	
 	lazy var directory: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
 }

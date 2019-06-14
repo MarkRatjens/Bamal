@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4D18977F223F3D470089A8F4 /* Bamal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D18977D223F3D470089A8F4 /* Bamal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D189788223F3DBD0089A8F4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D189785223F3DBD0089A8F4 /* Store.swift */; };
+		4D189788223F3DBD0089A8F4 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D189785223F3DBD0089A8F4 /* LocalStore.swift */; };
 		4D189789223F3DBD0089A8F4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D189786223F3DBD0089A8F4 /* Stack.swift */; };
-		4D18978A223F3DBD0089A8F4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D189787223F3DBD0089A8F4 /* Model.swift */; };
+		4D18978A223F3DBD0089A8F4 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D189787223F3DBD0089A8F4 /* LocalState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D18977A223F3D470089A8F4 /* Bamal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bamal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D18977D223F3D470089A8F4 /* Bamal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bamal.h; sourceTree = "<group>"; };
 		4D18977E223F3D470089A8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D189785223F3DBD0089A8F4 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		4D189785223F3DBD0089A8F4 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		4D189786223F3DBD0089A8F4 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		4D189787223F3DBD0089A8F4 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4D189787223F3DBD0089A8F4 /* LocalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +53,8 @@
 			isa = PBXGroup;
 			children = (
 				4D189786223F3DBD0089A8F4 /* Stack.swift */,
-				4D189787223F3DBD0089A8F4 /* Model.swift */,
-				4D189785223F3DBD0089A8F4 /* Store.swift */,
+				4D189787223F3DBD0089A8F4 /* LocalState.swift */,
+				4D189785223F3DBD0089A8F4 /* LocalStore.swift */,
 				4D18977D223F3D470089A8F4 /* Bamal.h */,
 				4D18977E223F3D470089A8F4 /* Info.plist */,
 			);
@@ -141,9 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D189788223F3DBD0089A8F4 /* Store.swift in Sources */,
+				4D189788223F3DBD0089A8F4 /* LocalStore.swift in Sources */,
 				4D189789223F3DBD0089A8F4 /* Stack.swift in Sources */,
-				4D18978A223F3DBD0089A8F4 /* Model.swift in Sources */,
+				4D18978A223F3DBD0089A8F4 /* LocalState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,7 @@
 import CoreData
 import UIKit
 
-open class Store<M: Model>: NSObject {
+open class LocalStore<M: LocalState>: NSObject {
 	open func insert() -> M { return M(context: managedContext) }
 
 	public var all: [M]  { return(fetch(fetchReq(sortedBy: [])) as! [M]) }
@@ -21,7 +21,13 @@ open class Store<M: Model>: NSObject {
 			return m
 		}
 	}
-	
+
+	public func fetchedBy(predicate: NSPredicate) -> M? {
+		let fr = fetchReq(sortedBy: [])
+		fr.predicate = predicate
+		return fetch(fr).first as? M
+	}
+
 	public func commit() {
 		do { try managedContext.save() }
 		catch { fatalError("Failed to save managedContext: \(error)") }
