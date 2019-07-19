@@ -22,10 +22,14 @@ open class LocalStore<M: LocalState>: NSObject {
 		}
 	}
 
-	public func fetchedBy(predicate: NSPredicate) -> M? {
+	public func by(predicate: NSPredicate) -> M? {
+		return by(predicate: predicate).first
+	}
+
+	public func by(predicate: NSPredicate) -> [M] {
 		let fr = fetchReq(sortedBy: [])
 		fr.predicate = predicate
-		return fetch(fr).first as? M
+		return fetch(fr) as! [M]
 	}
 
 	public func commit() {
