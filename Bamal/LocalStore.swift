@@ -53,7 +53,7 @@ open class LocalStore<M: LocalState>: NSObject {
 			let r = try managedContext.fetch(request)
 			return r
 		}
-		catch { fatalError("Failed to fetch proofs: \(error)") }
+		catch { fatalError("Failed to fetch \(request.entityName!) entities: \(error)") }
 	}
 	
 	public func fetchReq(sortedBy sortDescriptors: [NSSortDescriptor] = []) -> NSFetchRequest<NSManagedObject> {
