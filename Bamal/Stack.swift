@@ -1,7 +1,7 @@
 import CoreData
 
 open class Stack: NSObject {
-	public static var instance: Stack!
+	public static var ace: Stack!
 	public var bundle: Bundle!
 	public var containerName: String!
 	public var fileName: String!

@@ -73,7 +73,7 @@ open class LocalStore<M: LocalState>: NSObject {
 
 	func predicateWith(id: String) -> NSPredicate { return NSPredicate(format: "id = %@", id) }
 
-	override public init() { managedContext = Stack.instance.mainContext }
+	override public init() { managedContext = Stack.ace.mainContext }
 	
 	public var managedContext: NSManagedObjectContext
 	open var entityName: String { return String(describing: M.self) }
